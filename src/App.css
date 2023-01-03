@@ -1,0 +1,56 @@
+:root {
+  --tipi-color: #37517e;
+  --white: #ffffff;
+}
+.tipi-bgcolor {
+  background: var(--tipi-color);
+  color: var(--white);
+}
+
+#clientLogo {
+  background-color: #f3f5fa;
+}
+#clientLogo img {
+  filter: grayscale(1);
+  transition: 1s ease-in-out;
+  width: 6rem;
+  height: 2.4rem;
+  margin-bottom: 1.4rem;
+}
+#clientLogo img:hover {
+  filter: grayscale(0);  
+  transform: scale(1.1);
+}
+
+#AboutUsSection ul li {
+  border: 0;
+}
+
+.tipi-section-title h2 {
+  color: #37517e;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-bottom: 0.6rem;
+  margin-bottom: 1.6rem;
+}
+.tipi-section-title h2::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 7rem;
+    height: 0.1rem;
+    background: #ddd;
+    bottom: 1px;
+    left: calc(50% - 60px);
+}
+.tipi-section-title h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 1.6rem;
+    height: 0.25rem;
+    background: #47b2e4;
+    bottom: 0;
+    left: calc(50% - 20px);
+}
+
