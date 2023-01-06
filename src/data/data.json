@@ -1,0 +1,20 @@
+const whatWeDoData = [
+  {
+    "id": 1,
+    "title": "Syndicated Research Service",
+    "description": "The Insight Partners Inc's syndicated research service provides complete solution to the client requirements through their experienced analyst team. Each report provides in-depth analysis on the topic and discuss drivers, restraints and opportunities available in the market."
+  },
+  {
+    "id": 2,
+    "title": "Custom Research Service",
+    "description": "We help our clients in making smarter decisions through our custom solutions. We are expert in delivering high quality custom projects in Technology and Telecom industry. We are helping our clients by creating solutions as per their research requirements."
+  },
+  {
+    "id": 3,
+    "title": "Rapid Research Services",
+    "description": "Our rapid research solutions help clients in getting quick solutions without burning much of their approved budgets. We work with agile research approach to meet specific client requirements in short turnaround time, our domain expertise, reports repository, databases, integrated with project management skills makes it different from the rest."
+  }
+  
+];
+
+export whatWeDoData;

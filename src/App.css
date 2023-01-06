@@ -1,14 +1,22 @@
 :root {
   --tipi-color: #37517e;
   --white: #ffffff;
+  --light-color: #f3f5fa;
+  --skyblue-color: #47b2e4;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Jost", sans-serif;
 }
 .tipi-bgcolor {
   background: var(--tipi-color);
   color: var(--white);
 }
+.tipi-section-bg {
+  background: var(--light-color);
+}
 
 #clientLogo {
-  background-color: #f3f5fa;
+  background-color: var(--light-color);
 }
 #clientLogo img {
   filter: grayscale(1);
@@ -27,11 +35,17 @@
 }
 
 .tipi-section-title h2 {
-  color: #37517e;
+  color: var(--tipi-color);
   font-weight: bold;
   text-transform: uppercase;
   padding-bottom: 0.6rem;
   margin-bottom: 1.6rem;
+}
+.tipi-section-title2 h2 {
+  color: var(--tipi-color);
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-bottom: 0.6rem;
 }
 .tipi-section-title h2::before {
     content: "";
@@ -49,8 +63,136 @@
     display: block;
     width: 1.6rem;
     height: 0.25rem;
-    background: #47b2e4;
+    background: var(--skyblue-color);
     bottom: 0;
-    left: calc(50% - 20px);
+    left: calc(50% - 1.25rem);
 }
 
+#WhatWeDoAccordion .accordion-header span {
+  color: var(--skyblue-color);
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding-right: 0.75rem;
+}
+#WhatWeDoAccordion .accordion-header h3 {
+  font-size: 1.1rem;
+}
+#WhatWeDoAccordion .accordion-header h3:hover,
+#WhatWeDoAccordion .accordion-button:not(.collapsed) {
+  color: var(--skyblue-color);
+}
+
+#tipiSkills h3 {
+  font-weight: 700;
+  font-size: 2rem;
+  color: var(--tipi-color);
+  font-family: "Poppins", sans-serif;
+}
+#tipiSkills .skillName {
+  color: var(--tipi-color);
+  margin: 0 0 0.1rem 0;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+#tipiSkills .progress {
+  border-radius: 0;
+}
+#tipiSkills .progress-bar {
+  background-color: var(--tipi-color);
+}
+
+#ServicesSection span {
+  color: var(--skyblue-color);
+}
+#ServicesSection svg {
+    color: #47b2e4;
+    font-size: 2rem;
+    transition: 0.3s;
+  margin-bottom: 1rem;
+}
+/* #ServicesSection .single-service:hover span svg {
+  transform: scale(1.5) translate(0.25rem);
+  transition: 100ms ease-in-out;
+} */
+#ServicesSection h4 {
+  font-family: "Jost", sans-serif;
+  color: var(--tipi-color);
+}
+#ServicesSection .single-service:hover h4 {
+  color: var(--skyblue-color);
+}
+
+.tipi-cta {
+    background: linear-gradient(rgba(40, 58, 90, 0.9), rgba(40, 58, 90, 0.9)), url(https://theinsightpartnersinc.com/assets/img/cta-bg.jpg) fixed center center;
+    background-size: cover;
+    padding: 7rem 0;
+}
+.tipi-cta h3,  .tipi-cta p {
+  color: #fff;
+}
+.tipi-cta h3 {
+  font-size: 2rem;
+  font-weight: 700;  
+}
+
+.tipi-cta button{
+    font-family: "Jost", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 0.75rem 3.33rem;
+    border-radius: 5rem;
+    transition: 0.5s;
+    margin: 1rem;
+    border: 0.16rem solid #fff;
+    color: #fff;
+}
+
+#FAQsSection svg {
+  color: var(--skyblue-color);
+  margin-right: 0.6rem;
+  font-size: 1.2rem;
+}
+#ContactUsSection .tipi-info,
+#ContactUsSection .tipi-form {
+    border-top: 3px solid var(--skyblue-color);
+    border-bottom: 3px solid var(--skyblue-color);
+    padding: 30px;
+    background: #fff;
+    width: 100%;
+    box-shadow: 0 0 24px 0 rgb(0 0 0 / 10%);
+}
+#ContactUsSection .tipi-form button[type=submit] {
+    background: var(--skyblue-color);
+    border: 0;
+    padding: 12px 34px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 50px;
+}
+#ContactUsSection .tipi-info svg {
+    font-size: 20px;
+    color: var(--skyblue-color);
+    float: left;
+    width: 3rem;
+    height: 3rem;
+    background: #e7f5fb;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+}
+#ContactUsSection .tipi-info h4 {
+    padding: 0 0 0 60px;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: var(--tipi-color);
+}
+#ContactUsSection .tipi-info  p {
+    padding: 0 0 1rem 4rem;
+    margin-bottom: 1.75rem;
+    font-size: 1rem;
+    color: #6182ba;
+}

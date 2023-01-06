@@ -12,12 +12,12 @@ const Menu = () => {
   const MenuItem = MenuItems.map((item) => <Nav.Link href={item} style={navLink} > {item}</Nav.Link >);
 
   return (
-    <Navbar expand="sm" className="tipi-bgcolor">
+    <Navbar expand="sm" className="tipi-bgcolor" fixed="top" style={{ background: "#37517ecc" }}>
       <Container className="align-items-center">
         <Navbar.Brand style={{ color: "#ffffff" }}>THE INSIGHT PARTNERS INC.</Navbar.Brand>
         <Navbar.Toggle aria-controls="tipinc-navbar-nav" style={navLink} />
         <Navbar.Collapse id="tipinc-navbar-nav" >
-          <Nav className="ms-auto">
+          <Nav className="ms-auto align-items-center">
             {MenuItem}
             <Button variant="outline-info" className="px-3" style={{ borderRadius: '10rem', color: '#ffffff' }}>Get Started</Button>
           </Nav>

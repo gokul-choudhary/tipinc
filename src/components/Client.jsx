@@ -5,32 +5,17 @@ import Image from 'react-bootstrap/Image';
 
 
 const Client = () => {
+
+  const clientsList = ['client-1.png', 'client-2.png', 'client-3.png', 'client-4.png', 'client-5.png', 'client-6.png'];
+  const clients = clientsList.map((item) => 
+              <Col xs="4" sm="2"> 
+                <Image src={"https://theinsightpartnersinc.com/assets/img/clients/" + item} alt={item} className="img-fluid" />
+              </Col>);
+
   return (
     <Container fluid id="clientLogo" className="p-4">
-      <Row>
-        <Col xs="4" sm="2">
-          <Image src="https://theinsightpartnersinc.com/assets/img/clients/client-1.png" alt="client-1" className="img-fluid" />
-        </Col>
-
-        <Col xs="4" sm="2">
-          <Image src="https://theinsightpartnersinc.com/assets/img/clients/client-2.png" alt="client-2" className="img-fluid" />
-        </Col>
-
-        <Col xs="4" sm="2">
-          <Image src="https://theinsightpartnersinc.com/assets/img/clients/client-3.png" alt="client-3" className="img-fluid" />
-        </Col>
-
-        <Col xs="4" sm="2">
-          <Image src="https://theinsightpartnersinc.com/assets/img/clients/client-4.png" alt="client-4" className="img-fluid" />
-        </Col>
-
-        <Col xs="4" sm="2">
-          <Image src="https://theinsightpartnersinc.com/assets/img/clients/client-5.png" alt="client-5" className="img-fluid" />
-        </Col>
-
-        <Col xs="4" sm="2">
-          <Image src="https://theinsightpartnersinc.com/assets/img/clients/client-6.png" alt="client-6" className="img-fluid" />
-        </Col>
+      <Row>        
+          {clients}        
       </Row>
     </Container>
   );
