@@ -8,7 +8,7 @@ import * as Icon from 'react-bootstrap-icons';
   
 const ContactUs = () => {
   return(
-    <Container className="py-5 px-sm-5" id="ContactUsSection">
+    <Container className="py-5" id="ContactUsSection">
       <div className="tipi-section-title position-relative">
         <h2 className="text-center">CONTACT</h2>
       </div>

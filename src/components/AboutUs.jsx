@@ -8,7 +8,7 @@ import * as Icon from 'react-bootstrap-icons';
 const AboutUs = () => {
   const AboutListVal = ['Making Intelligent Decision | Custom Research Solution', 'Identifying Business Solution to your Research Needs', '24x7 customer support | Free analyst support*'];
 
-  const lists = AboutListVal.map((list) => <ListGroup.Item as="li"><Icon.Check size={'1.6rem'} style={{ color: '#47b2e4' }} />  {list} </ListGroup.Item>);
+  const lists = AboutListVal.map((list, index) => <ListGroup.Item as="li"  key={index}><Icon.Check size={'1.6rem'} style={{ color: '#47b2e4' }} />  {list} </ListGroup.Item>);
 
   return (
     <Container className="my-4" id="AboutUsSection">

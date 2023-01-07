@@ -9,7 +9,7 @@ const navLink = {
 
 const Menu = () => {
   const MenuItems = ['Home', 'About', 'Services', 'Contact'];
-  const MenuItem = MenuItems.map((item) => <Nav.Link href={item} style={navLink} > {item}</Nav.Link >);
+  const MenuItem = MenuItems.map((item, index) => <Nav.Link href={item} style={navLink}  key={index}> {item}</Nav.Link >);
 
   return (
     <Navbar expand="sm" className="tipi-bgcolor" fixed="top" style={{ background: "#37517ecc" }}>

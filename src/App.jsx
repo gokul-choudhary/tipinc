@@ -9,6 +9,7 @@ import FAQs from './components/FAQs.jsx';
 import Footer from './components/Footer.jsx';
 import ContactUs from './components/ContactUs.jsx';
 
+
 export default function App() {
   return (
     <>

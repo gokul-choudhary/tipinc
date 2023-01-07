@@ -7,8 +7,8 @@ import Image from 'react-bootstrap/Image';
 const Client = () => {
 
   const clientsList = ['client-1.png', 'client-2.png', 'client-3.png', 'client-4.png', 'client-5.png', 'client-6.png'];
-  const clients = clientsList.map((item) => 
-              <Col xs="4" sm="2"> 
+  const clients = clientsList.map((item, index) => 
+              <Col xs="4" sm="2" key={index}> 
                 <Image src={"https://theinsightpartnersinc.com/assets/img/clients/" + item} alt={item} className="img-fluid" />
               </Col>);
 

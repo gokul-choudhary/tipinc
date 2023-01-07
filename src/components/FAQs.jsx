@@ -32,7 +32,7 @@ const FAQs = () => {
   ];
   const FAQs = FAQList.map(item => {
     return (
-      <Accordion className="bg-white m-3 mx-4 p-4">
+      <Accordion className="bg-white m-3 mx-4 p-4" key={item.id}>
         <Accordion.Header><Icon.QuestionCircle  /> {item.que}</Accordion.Header>
         <Accordion.Body>{item.ans}</Accordion.Body>
       </Accordion>

@@ -107,7 +107,7 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--skyblue-color);
 }
 #ServicesSection svg {
-    color: #47b2e4;
+    color: var(--skyblue-color);
     font-size: 2rem;
     transition: 0.3s;
   margin-bottom: 1rem;
@@ -130,7 +130,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 7rem 0;
 }
 .tipi-cta h3,  .tipi-cta p {
-  color: #fff;
+  color: var(--white);
 }
 .tipi-cta h3 {
   font-size: 2rem;
@@ -147,8 +147,8 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 5rem;
     transition: 0.5s;
     margin: 1rem;
-    border: 0.16rem solid #fff;
-    color: #fff;
+    border: 0.16rem solid var(--white);
+    color: var(--white);
 }
 
 #FAQsSection svg {
@@ -161,7 +161,7 @@ h1, h2, h3, h4, h5, h6 {
     border-top: 3px solid var(--skyblue-color);
     border-bottom: 3px solid var(--skyblue-color);
     padding: 30px;
-    background: #fff;
+    background: var(--white);
     width: 100%;
     box-shadow: 0 0 24px 0 rgb(0 0 0 / 10%);
 }
@@ -169,7 +169,7 @@ h1, h2, h3, h4, h5, h6 {
     background: var(--skyblue-color);
     border: 0;
     padding: 12px 34px;
-    color: #fff;
+    color: var(--white);
     transition: 0.4s;
     border-radius: 50px;
 }
@@ -195,4 +195,58 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 1.75rem;
     font-size: 1rem;
     color: #6182ba;
+}
+#FooterSection .tipi-footer-top .tipi-footer-contact h3 {
+    font-size: 1.75rem;
+    margin: 0 0 0.75rem 0;
+    padding: 0.25rem 0 0.25rem 0;
+    line-height: 1;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--tipi-color);
+}
+#FooterSection .tipi-footer-top .tipi-footer-contact p {
+    font-size: 0.9rem;
+    line-height: 2;
+    margin-bottom: 0;
+    font-family: "Jost", sans-serif;
+    color: #5e5e5e;
+}
+#FooterSection .tipi-footer-top h4 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--tipi-color);
+    position: relative;
+    padding-bottom: 0.75rem;
+}
+
+#FooterSection .list-group-item {
+  border: 0;
+  padding-left: 0;
+  font-size: 0.96rem;
+}
+
+#FooterSection .tipi-footer-top .tipi-social-links .list-group-item {
+    font-size: 1rem;
+    display: inline-block;
+    background: var(--skyblue-color);
+    color: var(--white);
+    line-height: 1;
+    padding: 0.45rem 0;
+    margin-right: 0.25rem;
+    margin-bottom: 0.25rem;
+    border-radius: 50%;
+    text-align: center;
+    width: 2.2rem;
+    height: 2.2rem;
+    transition: 0.3s;
+}
+#FooterSection .tipi-footer-top .tipi-useful-links svg,
+#FooterSection .tipi-footer-top .tipi-our-services svg {
+  color: var(--skyblue-color);
+}
+
+#FooterSection .tipi-footer-top .tipi-useful-links .list-group-item:hover,
+#FooterSection .tipi-footer-top .tipi-our-services .list-group-item:hover {
+  color: var(--skyblue-color);
 }
